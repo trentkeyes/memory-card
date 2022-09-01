@@ -2,7 +2,7 @@ body {
     background-color: white;
 }
 
-.container {
+.card--container {
     display: flex;
     flex-flow: row wrap;
 }
