@@ -1,0 +1,16 @@
+body {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 10px;
+    border: 1px solid black;
+}
