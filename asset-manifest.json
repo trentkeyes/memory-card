@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.eba07135.css",
+    "main.js": "/memory-card/static/js/main.8c23ee12.js",
+    "static/media/seinfeld apartment.jpeg": "/memory-card/static/media/seinfeld apartment.ff7eb1c4b3531e6648fb.jpeg",
+    "static/media/susan.png": "/memory-card/static/media/susan.c1f477cff4e81aab68d8.png",
+    "static/media/bania.png": "/memory-card/static/media/bania.46cfb6774f86261a00ff.png",
+    "static/media/frank.png": "/memory-card/static/media/frank.a72e9d37fa55c5a225e2.png",
+    "static/media/helen.png": "/memory-card/static/media/helen.4755028151147ff36491.png",
+    "static/media/morty.png": "/memory-card/static/media/morty.446952cea0a1c06ff888.png",
+    "static/media/soupnazi.png": "/memory-card/static/media/soupnazi.0e0d91aceaeb76bd5e31.png",
+    "static/media/estelle.png": "/memory-card/static/media/estelle.6d3c689010677d66f7bf.png",
+    "static/media/uncleleo.png": "/memory-card/static/media/uncleleo.1b5dfa88216201d46957.png",
+    "static/media/george.png": "/memory-card/static/media/george.d10c293a290f43805a78.png",
+    "static/media/elaine.png": "/memory-card/static/media/elaine.c8ffb0c89bbb3340121b.png",
+    "static/media/puddy.png": "/memory-card/static/media/puddy.2d3f73d8fb7d45af6c8c.png",
+    "static/media/steinbrenner.png": "/memory-card/static/media/steinbrenner.5e85b6fbedeefc7f3c36.png",
+    "static/media/peterman.png": "/memory-card/static/media/peterman.05906d8015fe77062cd1.png",
+    "static/media/newman.png": "/memory-card/static/media/newman.3f6d9235f684366d64ff.png",
+    "static/media/jerry.png": "/memory-card/static/media/jerry.a4ea382af0e1b2341627.png",
+    "static/media/kramer.png": "/memory-card/static/media/kramer.aa118e6cb9ca9066120f.png",
+    "index.html": "/memory-card/index.html",
+    "main.eba07135.css.map": "/memory-card/static/css/main.eba07135.css.map",
+    "main.8c23ee12.js.map": "/memory-card/static/js/main.8c23ee12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eba07135.css",
+    "static/js/main.8c23ee12.js"
+  ]
+}
