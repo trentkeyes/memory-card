@@ -1,16 +1,80 @@
+* {
+    margin: 0;
+}
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     background-color: white;
     background-image: url(../assets/images/seinfeld\ apartment.jpeg);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav {
-    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    color: red;
+    margin: 10px;
+    border-radius: 6px;
+    padding: 0px;
 }
+
+.title {
+    background-color: yellow;
+    padding: 1rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title>h1 {
+    font-size: 42px;
+}
+
+.title>h2 {
+    font-size: 24px;
+}
+
+.description {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.description>p {
+    color: black;
+}
+
+.scoreboard {
+    background-color: yellow;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 
 .cards--container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     background-position: cover;
 }
 
@@ -19,7 +83,10 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 16px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(220, 220, 220, 0.537);
 }
 
 .card--image {
@@ -28,6 +95,8 @@ nav {
     background-color: white;
     border: 1px solid black;
     background-position: center;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .card--text-background {
@@ -51,18 +120,14 @@ nav {
 
 #card2 {
     background-image: url(../assets/images/elaine.png);
-
 }
 
 #card3 {
-
     background-image: url(../assets/images/kramer.png);
-
 }
 
 #card4 {
     background-image: url(../assets/images/newman.png);
-
 }
 
 #card5 {

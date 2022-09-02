@@ -5,11 +5,9 @@ export default function Card(props) {
   return (
     <div>
       <div className="card">
-              <div className="card--image" id={id} onClick={handleClick}>
-        
-      </div><div className="card--text-background">{name}</div>
+        <div className="card--image" id={id} onClick={handleClick}></div>
+        <div className="card--text-background">{name}</div>
       </div>
-
     </div>
   );
 }

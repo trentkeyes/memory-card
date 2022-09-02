@@ -18,7 +18,8 @@ export default function Game() {
   };
 
   const play = (e) => {
-    if (clickedCards.some((card) => card.id === e.target.id)) {
+    const elementID = e.target.id.substring(4);
+    if (clickedCards.some((card) => card === elementID)) {
       setScore(0);
       setClickedCards([]);
     } else {
@@ -32,7 +33,7 @@ export default function Game() {
       }
     }
     setClickedCards((prevClickedCards) => {
-      return [...prevClickedCards, e.target.id];
+      return [...prevClickedCards, elementID];
     });
     setCards((prevCards) => {
       return shuffle(prevCards);
@@ -50,24 +51,35 @@ export default function Game() {
     );
   });
 
-  // useEffect(() => {
-  //   setCards((prevCards) => {
-  //     return shuffle(prevCards);
-  //   });
-  // }, []);
-
-  console.log(`Clicked cards: ${clickedCards}`, `cards: ${cards}`);
+  useEffect(() => {
+    setCards((prevCards) => {
+      return shuffle(prevCards);
+    });
+  }, []);
 
   return (
-    <div>
+    <div className="container">
       <nav>
-        <h1>Seinfeld Memory Game</h1>
-        <p>
-          What's the deal with the human memory? First you think you haven't
-          already clicked on the character, then you lose your streak! You
-          stupid idiot! How hard is it to click on a unique character 16 times
-          in a row?
-        </p>
+        <div className="title">
+          <h1>
+            <em>Seinfeld</em>
+          </h1>
+          <h2>Memory Game</h2>
+        </div>
+        <div className="description">
+          <p>
+            <em>What's the deal </em>
+            with the human memory?
+          </p>
+          <p>
+            {' '}
+            First you think you haven't already clicked on the character, then
+            you lose your streak! <em>You stupid idiot!</em>
+          </p>
+          <p>
+            How hard is it to click on a unique character 16 times in a row?
+          </p>
+        </div>
         <Score score={score} bestScore={bestScore} />
       </nav>
       <div className="cards--container">{cardElements}</div>
