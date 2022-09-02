@@ -1,16 +1,114 @@
 body {
+    font-family: 'Nunito Sans', sans-serif;
     background-color: white;
+    background-image: url(../assets/images/seinfeld\ apartment.jpeg);
 }
 
-.card--container {
+nav {
+    background-color: yellow;
+}
+
+.cards--container {
     display: flex;
     flex-flow: row wrap;
+    background-position: cover;
 }
 
 .card {
-    height: 100px;
-    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+.card--image {
+    height: 180px;
+    width: 180px;
     background-color: white;
-    margin: 10px;
     border: 1px solid black;
+    background-position: center;
+}
+
+.card--text-background {
+    background-color: yellow;
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px;
+    border-radius: 20px;
+    max-width: fit-content;
+    margin-top: 8px;
+}
+
+#card0 {
+    background-image: url(../assets/images/jerry.png);
+}
+
+#card1 {
+    background-image: url(../assets/images/george.png);
+}
+
+#card2 {
+    background-image: url(../assets/images/elaine.png);
+
+}
+
+#card3 {
+
+    background-image: url(../assets/images/kramer.png);
+
+}
+
+#card4 {
+    background-image: url(../assets/images/newman.png);
+
+}
+
+#card5 {
+    background-image: url(../assets/images/susan.png);
+}
+
+#card6 {
+    background-image: url(../assets/images/puddy.png);
+}
+
+#card7 {
+    background-image: url(../assets/images/frank.png);
+}
+
+#card8 {
+    background-image: url(../assets/images/estelle.png);
+}
+
+#card9 {
+    background-image: url(../assets/images/peterman.png);
+}
+
+#card10 {
+    background-image: url(../assets/images/uncleleo.png);
+}
+
+#card11 {
+    background-image: url(../assets/images/soupnazi.png);
+}
+
+#card12 {
+    background-image: url(../assets/images/morty.png);
+}
+
+#card13 {
+    background-image: url(../assets/images/helen.png);
+}
+
+#card14 {
+    background-image: url(../assets/images/bania.png);
+}
+
+#card15 {
+    background-image: url(../assets/images/steinbrenner.png);
+}
+
+#card16 {
+    background-image: url(../assets/images/uncleleo.png);
 }

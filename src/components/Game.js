@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import Score from './Score';
+import characters from '../seinfeld-characters';
 import '../styles/style.css';
 
 export default function Game() {
-  const [cards, setCards] = useState([0, 1, 2, 3, 4, 5, 6, 7]);
+  const [cards, setCards] = useState(characters);
   const [clickedCards, setClickedCards] = useState([]);
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
@@ -16,8 +17,8 @@ export default function Game() {
       .map(({ value }) => value);
   };
 
-  const handleClick = (e) => {
-    if (clickedCards.some((card) => card === e.target.id)) {
+  const play = (e) => {
+    if (clickedCards.some((card) => card.id === e.target.id)) {
       setScore(0);
       setClickedCards([]);
     } else {
@@ -38,29 +39,38 @@ export default function Game() {
     });
   };
 
-  useEffect(() => {
-    setCards((prevCards) => {
-      return shuffle(prevCards);
-    });
-  }, []);
-
   const cardElements = cards.map((card) => {
-    return <Card key={card} id={card} handleClick={handleClick} />;
+    return (
+      <Card
+        key={card.id}
+        id={`card${card.id}`}
+        name={card.name}
+        handleClick={play}
+      />
+    );
   });
+
+  // useEffect(() => {
+  //   setCards((prevCards) => {
+  //     return shuffle(prevCards);
+  //   });
+  // }, []);
 
   console.log(`Clicked cards: ${clickedCards}`, `cards: ${cards}`);
 
   return (
     <div>
       <nav>
-        <h1>Memory Card Game</h1>
+        <h1>Seinfeld Memory Game</h1>
         <p>
-          Remember what images you've clicked! Get points by clicking on a
-          different image.
+          What's the deal with the human memory? First you think you haven't
+          already clicked on the character, then you lose your streak! You
+          stupid idiot! How hard is it to click on a unique character 16 times
+          in a row?
         </p>
         <Score score={score} bestScore={bestScore} />
       </nav>
-      <div className="card--container">{cardElements}</div>
+      <div className="cards--container">{cardElements}</div>
     </div>
   );
 }
