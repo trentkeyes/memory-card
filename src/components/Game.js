@@ -22,6 +22,8 @@ export default function Game() {
     if (clickedCards.some((card) => card === elementID)) {
       setScore(0);
       setClickedCards([]);
+      console.log('you lose');
+      console.log(clickedCards);
     } else {
       setScore((prevScore) => {
         return prevScore + 1;
@@ -31,10 +33,10 @@ export default function Game() {
           return prevBestScore + 1;
         });
       }
+      setClickedCards((prevClickedCards) => {
+        return [...prevClickedCards, elementID];
+      });
     }
-    setClickedCards((prevClickedCards) => {
-      return [...prevClickedCards, elementID];
-    });
     setCards((prevCards) => {
       return shuffle(prevCards);
     });
@@ -56,6 +58,8 @@ export default function Game() {
       return shuffle(prevCards);
     });
   }, []);
+
+  console.log(clickedCards);
 
   return (
     <div className="container">
