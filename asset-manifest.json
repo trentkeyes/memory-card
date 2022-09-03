@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/memory-card/static/css/main.eba07135.css",
-    "main.js": "/memory-card/static/js/main.8c23ee12.js",
+    "main.js": "/memory-card/static/js/main.1e16e69a.js",
     "static/media/seinfeld apartment.jpeg": "/memory-card/static/media/seinfeld apartment.ff7eb1c4b3531e6648fb.jpeg",
     "static/media/susan.png": "/memory-card/static/media/susan.c1f477cff4e81aab68d8.png",
     "static/media/bania.png": "/memory-card/static/media/bania.46cfb6774f86261a00ff.png",
@@ -21,10 +21,10 @@
     "static/media/kramer.png": "/memory-card/static/media/kramer.aa118e6cb9ca9066120f.png",
     "index.html": "/memory-card/index.html",
     "main.eba07135.css.map": "/memory-card/static/css/main.eba07135.css.map",
-    "main.8c23ee12.js.map": "/memory-card/static/js/main.8c23ee12.js.map"
+    "main.1e16e69a.js.map": "/memory-card/static/js/main.1e16e69a.js.map"
   },
   "entrypoints": [
     "static/css/main.eba07135.css",
-    "static/js/main.8c23ee12.js"
+    "static/js/main.1e16e69a.js"
   ]
 }
